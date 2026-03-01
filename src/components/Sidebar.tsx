@@ -23,10 +23,6 @@ const Sidebar = ({ visible, setVisible }: any) => {
     setIsOpenTradingBot(!isOpenTradingBot);
   };
 
-  const toggleCommunity = () => {
-    setIsOpenCommunity(!isOpenCommunity);
-  };
-
   return (
     <>
       {/* <div className="">
@@ -44,7 +40,7 @@ const Sidebar = ({ visible, setVisible }: any) => {
             }}
             href={"/"}
           >
-            <Image src={Logo} alt="" height={50} />
+            <Image src={Logo} alt="" height={23} />
           </Link>
           <button
             onClick={() => {
@@ -167,7 +163,7 @@ const Sidebar = ({ visible, setVisible }: any) => {
                     : ""
                 }`}
               >
-                NFT
+                X: @ClawSceen
               </Link>
             </div>
 
@@ -301,81 +297,6 @@ const Sidebar = ({ visible, setVisible }: any) => {
                 </Link>
               </div>
             )}
-
-
-
-            <div className=" flex gap-2">
-              <Image
-                src="/tradingbot.svg"
-                alt=""
-                height={30}
-                width={30}
-                className=" w-[2rem] h-[2.6rem]"
-              />
-              <button
-                className="px-2 p-2 text-left text-white text-xl font-bold"
-                onClick={toggleCommunity}
-              >
-                Community
-              </button>
-            </div>
-
-            {isOpenCommunity && (
-              <div className="flex  flex-col  pl-7 gap-4  text-lg text-gray-400 animate-fade-down animate-duration-400">
-                <Link
-                  onClick={() => {
-                    setVisible(false);
-                  }}
-                  href={"/"}
-                  className={`p-2 rounded-md ${
-                    router.pathname === "/portfolio"
-                      ? "bg-gray-800 text-white  "
-                      : ""
-                  }`}
-                >
-                  Portfolio
-                </Link>
-                <Link
-                  onClick={() => {
-                    setVisible(false);
-                  }}
-                  href={"/"}
-                  className={`p-2 rounded-md ${
-                    router.pathname === "/activetrades"
-                      ? "bg-gray-800 text-white  "
-                      : ""
-                  }`}
-                >
-                  Active Trades
-                </Link>
-                <Link
-                  onClick={() => {
-                    setVisible(false);
-                  }}
-                  href={"/"}
-                  className={`p-2 rounded-md ${
-                    router.pathname === "/sleepertrades"
-                      ? "bg-gray-800 text-white  "
-                      : ""
-                  }`}
-                >
-                  Sleeper Trades
-                </Link>
-                <Link
-                  onClick={() => {
-                    setVisible(false);
-                  }}
-                  href={"/"}
-                  className={`p-2 rounded-md ${
-                    router.pathname === "/dca" ? "bg-gray-800 text-white  " : ""
-                  }`}
-                >
-                  DCA
-                </Link>
-              </div>
-            )}
-
-
           </div>
         </div>
       </div>
