@@ -146,7 +146,7 @@ const Sidebar = ({ visible, setVisible }: any) => {
             {/* nft */}
             <div className=" flex gap-2 items-center justify-start">
               <Image
-                src="/nft3.svg"
+                src="/x.svg"
                 alt=""
                 height={30}
                 width={30}
@@ -156,14 +156,14 @@ const Sidebar = ({ visible, setVisible }: any) => {
                 onClick={() => {
                   setVisible(false);
                 }}
-                href={"/Nft"}
+              href={"https://x.com/ClawSceen"}
                 className={`p-2 rounded-md text-xl text-white font-bold ${
                   router.pathname === "/Nft"
                     ? "bg-gray-800 w-full text-white  "
                     : ""
                 }`}
               >
-                X: @ClawSceen
+                @ClawSceen
               </Link>
             </div>
 
