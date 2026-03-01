@@ -163,7 +163,7 @@ const Sidebar = ({ visible, setVisible }: any) => {
                     : ""
                 }`}
               >
-                @ClawSceen
+                X
               </Link>
             </div>
 
