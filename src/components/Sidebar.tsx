@@ -156,7 +156,7 @@ const Sidebar = ({ visible, setVisible }: any) => {
                 onClick={() => {
                   setVisible(false);
                 }}
-              href={"https://www.x.com/ClawSceen"}
+              href={"https://www.x.com/ClawScreen"}
                 className={`p-2 rounded-md text-xl text-white font-bold ${
                   router.pathname === "/Nft"
                     ? "bg-gray-800 w-full text-white  "
