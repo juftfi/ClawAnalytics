@@ -163,7 +163,7 @@ const Sidebar = ({ visible, setVisible }: any) => {
                     : ""
                 }`}
               >
-                X
+                Community
               </Link>
             </div>
 
